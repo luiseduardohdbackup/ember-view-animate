@@ -1,0 +1,24 @@
+{
+  "name": "ember-view-animate",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mysterioustrousers/ember-view-animate",
+  "main": "ember-view-animate.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "authors": [
+    "Adam Kirk <adam@mysterioustrousers.com>"
+  ],
+  "dependencies": {
+    "jquery":">= 1.7.1"
+  },
+  "description": "Animate insertion and removal of Ember views",
+  "keywords": [
+    "ember.js",
+    "ember",
+    "animate",
+    "animations"
+  ],
+  "license": "MIT"
+}
