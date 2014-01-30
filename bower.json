@@ -2,7 +2,7 @@
   "name": "ember-view-animate",
   "version": "1.0.0",
   "homepage": "https://github.com/mysterioustrousers/ember-view-animate",
-  "main": "ember-view-animate.js",
+  "main": "view_animation_mixin.js",
   "ignore": [
     ".jshintrc",
     "**/*.txt"
