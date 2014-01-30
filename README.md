@@ -9,7 +9,10 @@ This is a very safe to use mixin. It does **not** do anything dangerous like ove
 
     bower install ember-view-animate --save
     
-    Or you can paste the contents of `ember-view-animate`
+Or you can paste the contents of `ember-view-animate.js` into a file in your project. Either way, you'll need to include
+the script with an html tag or sprocket requires, etc.
+
+This depends on jQuery.
 
 ### Usage:
 
