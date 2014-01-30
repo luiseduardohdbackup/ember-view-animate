@@ -18,7 +18,7 @@ Simply add the mixin to a view and you get `needsAnimateIn` and `needsAnimateOut
 Javascript:
 
 ```js
-App.NewNoteView = Ember.View.extend(App.ViewAnimationMixin, {
+App.YourView = Ember.View.extend(App.ViewAnimationMixin, {
 
   needsAnimateIn: function(element) {
     // since it's a jQuery element, you could also just do element.slideDown
