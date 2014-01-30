@@ -20,16 +20,16 @@ Javascript:
 ```js
 App.NewNoteView = Ember.View.extend(App.ViewAnimationMixin, {
 
-  // since it's a jQuery element, you could also just do element.slideDown
   needsAnimateIn: function(element) {
-    return $(element).slideDown(function() {
-      return $(this).find('textarea').focus();
+    // since it's a jQuery element, you could also just do element.slideDown
+    $(element).slideDown(function() {
+      $(this).find('textarea').focus();
     });
   },
   
   needsAnimateOut: function(element, finished) {
-    return $(element).slideUp(function() {
-      return finished();
+    $(element).slideUp(function() {
+      finished();
     });
   }
   
