@@ -1,14 +1,13 @@
 App.ViewAnimationMixin = Ember.Mixin.create({
-
   _VAM_didInsertElement: (function() {
+    var _this = this;
     if (this.needsAnimateIn) {
       this.$().hide();
-      Ember.run.scheduleOnce('afterRender', function() {
-        return this.needsAnimateIn(this.$());
+      return Ember.run.scheduleOnce('afterRender', function() {
+        return _this.needsAnimateIn(_this.$());
       });
     }
   }).on('didInsertElement'),
-  
   _VAM_willDestroyElement: (function() {
     var $this, clone, idx, parent,
       _this = this;
@@ -18,7 +17,7 @@ App.ViewAnimationMixin = Ember.Mixin.create({
       clone.find('script').remove();
       parent = $this.parent();
       idx = parent.children().index($this);
-      Ember.run.scheduleOnce('afterRender', function() {
+      return Ember.run.scheduleOnce('afterRender', function() {
         $(parent.children()[idx]).after(clone);
         return _this.needsAnimateOut(clone, function() {
           return clone.remove();
@@ -26,5 +25,4 @@ App.ViewAnimationMixin = Ember.Mixin.create({
       });
     }
   }).on('willDestroyElement')
-  
 });
