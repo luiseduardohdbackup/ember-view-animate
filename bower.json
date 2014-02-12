@@ -1,6 +1,6 @@
 {
   "name": "ember-view-animate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/mysterioustrousers/ember-view-animate",
   "main": "view_animation_mixin.js",
   "ignore": [

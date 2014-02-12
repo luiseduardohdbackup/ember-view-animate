@@ -4,7 +4,8 @@ App.ViewAnimationMixin = Ember.Mixin.create
   _VAM_didInsertElement: (->
     if this.needsAnimateIn
       @$().hide()
-      this.needsAnimateIn @$()
+      Ember.run.scheduleOnce 'afterRender', =>
+        this.needsAnimateIn @$()
   ).on 'didInsertElement'
 
 
